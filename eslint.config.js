@@ -1,0 +1,13 @@
+import pluginVue from 'eslint-plugin-vue'
+
+export default [
+  { ignores: ['dist/**', 'node_modules/**'] },
+  ...pluginVue.configs['flat/essential'],
+  {
+    files: ['app/src/**/*.{js,vue}'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
+  },
+]

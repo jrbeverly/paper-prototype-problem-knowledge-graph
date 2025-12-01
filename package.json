@@ -1,0 +1,25 @@
+{
+  "name": "paper-prototype-problem-knowledge-graph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node tools/generate-graph.js",
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "lint": "eslint app/src"
+  },
+  "dependencies": {
+    "cytoscape": "^3.34.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.54.0",
+    "@vitejs/plugin-vue": "^5.1.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "gray-matter": "^4.0.3",
+    "vite": "^5.0.0"
+  }
+}
